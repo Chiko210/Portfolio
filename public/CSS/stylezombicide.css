@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: brown;
+}
+
+.logo img{
+    width: 100vw;
+}
+
+.choice ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.choice ul li{
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+}
+
+.choice ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.choice ul li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 758px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo img{
+        width: auto;
+    }
+
+    .choice ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .choice ul li{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+}
+
+/* main{
+    width: 100%;
+} */
+
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all ease 1.2s;
+}
+.hero-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h2{
+    font-size: 2rem;
+    color: brown;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.retour{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 25px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+
+.retour a {
+    padding: 25px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 750px){
+
+    img{
+        width: 50%;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;        
+    }
+
+    .hero{
+        width: 100%;
+        margin: 15px;
+        padding: 15px 15px;
+        border-radius: 25px;
+        border: 1px solid black;
+    }
+
+    .hero:hover{
+        box-shadow: 1px 5px 5px 5px brown;
+        transform: scale(1.05);
+    }
+
+}

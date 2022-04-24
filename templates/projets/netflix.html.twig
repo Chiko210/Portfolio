@@ -1,0 +1,89 @@
+
+
+{% block stylesheets%}
+<link rel="stylesheet" href="{{ asset('/CSS/stylenetflix.css') }}"/>
+{% endblock %}
+
+
+{% block body %}
+<header class="id">
+    <select name="color" class="langue">
+        <option value="Français">français</option>
+        <option value="Anglais">english</option>
+        <option value="Allemand">deutchland</option>
+        <option value="Espagnol">español</option>
+        <option value="Néerlandais">nederland</option>
+        <option value="Japanese">日本語</option>
+    </select>
+    <button>S'identifier</button>
+</header>
+<div class="img">
+    <img class ="logo" src="{{ asset('images/netflix/logo.svg')}}" alt="logo">
+    <h1>Films, séries, TV et bien <br> plus en illimité !</h1>
+    <p>Où que vous soyez, Annulez à tout moment.</p>
+    <p>Prêt à regarder Netflix ? <br> Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+    <button class="button"><span>profitez d'un mois gratuit</span></button>
+</div>
+<div class="target">
+    <div class="rotate">
+        <img class="pc" src="{{ asset('images/netflix/Background.png')}}" alt="">
+        <p>Où vous le voulez !</p>
+        <span>Des séries TV et des films personnalisés pour vous. Où et quand vous le souhaitez.</span>
+    </div>
+</div>
+<div class="target2">
+        <div class="demo1">
+            <img src="{{ asset('images/netflix/asset_TV_UI.png')}}" alt="">
+            <h2>Netflix sur votre PC</h2>
+            <p>Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-Ray et bien plus.</p>
+        </div>
+        <div class="demo1">
+            <img src="{{ asset('images/netflix/asset_mobile_tablet_UI_2.png')}}" alt="">
+            <h2>Netflix sur votre PC</h2>
+            <p>Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-Ray et bien plus.</p>
+        </div>
+        <div class="demo1">
+            <img src="{{ asset('images/netflix/asset_website_UI.png')}}" alt="">
+            <h2>Netflix sur votre PC</h2>
+            <p>Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-Ray et bien plus.</p>
+        </div>
+</div>
+<footer>
+<div class="target3">
+    <div>
+        <ul>
+            <li>FAQ</li>
+            <li>Relation Investissers</li>
+            <li>Modes de lecture</li>
+            <li>Mentions légales</li>
+            <li>Seulement sur Netflix</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Centre d'aide</li>
+            <li>Recrutement</li>
+            <li>condition d'utilisation</li>
+            <li>Nous contacter</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Compte</li>
+            <li>Utilisation des cartes cadeaux</li>
+            <li>Confidentialité</li>
+            <li>Test de vitesse</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Presse</li>
+            <li>Acheter des cartes cadeaux</li>
+            <li>Préférences de coockies</li>
+            <li>Informations légales</li>
+        </ul>
+    </div>
+</div>
+</footer>
+
+{% endblock %}

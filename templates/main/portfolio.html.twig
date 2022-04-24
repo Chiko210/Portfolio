@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+{% block title %}Portfolio{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 title">
+            <h1 style="color: orange;">Portfolio</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row portfolio">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ asset('images/Netflix.jpg') }}" alt="Netflix">
+                        <div class="card-body">
+                            <h2 class="card-title">Netflix</h2>
+                            <p class="card-text">
+                                Description : Réalisation simple d'un copie du célèbre site Netflix.
+                            </p>
+                            <p>
+                                Potentiel : Site vitrine avec un rendu simple mais efficace.
+                            </p>
+                            <p>
+                                Technologies utilisées : HTML/CSS, Bootstrap.
+                            </p>
+                            <a href="{{ path('netflix')}}" class="btn btn-primary">Naviguer</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ asset('images/Zombicide.jpg') }}" alt="Zombicide">
+                        <div class="card-body">
+                            <h2 class="card-title">Zombicide</h2>
+                            <p class="card-text">
+                                Description : Réalisation simple d'un copie du site du célèbre jeu Zombicide.
+                            </p>
+                            <p>
+                                Potentiel : Site vitrine avec des éléments dynamiques et animés.
+                            </p>
+                            <p>
+                                Technologies utilisées : HTML/CSS, JavaScript.
+                            </p>
+                            <a href="{{ path('zombicide')}}" class="btn btn-primary">Naviguer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+

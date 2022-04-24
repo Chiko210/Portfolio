@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Varela';
+    src: url('../CSS/VarelaRound-Regular.ttf');
+}
+
+body{
+    font-family: 'Varela', sans-serif;
+    background-image: url("../images/bgdesign.jpg");
+    /* Permet de "fixer" l'image au fond de la page */
+    background-attachment: fixed;
+
+    /* Change l'effet de répétition de l'image (voir lien plus bas) */
+    background-repeat: no-repeat;
+
+    /* Change la position de l'image sur le fond */
+    background-position: center center;
+
+    /* Permet de changer la manière dont l'image recouvre le fond */
+    /* cover = couvre tout l'élément même si l'image ne se voit pas en entière */
+    /* contain = l'image est entièrement visible même si toute la surface n'est pas remplie */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container1 ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+
+    
+}
+
+.container1 li {
+    font-size: 1.3rem;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.container2{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: antiquewhite;
+    margin: 15px;
+    width: 100%;
+}
+
+.container2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.container2 li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+.container2 li:hover{
+    box-shadow: 0px 0px 39px -8px rgba(255,165,0, 0.56);
+    transition: .3s all ease;
+
+}
+
+img{
+    border-radius: 15px;
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease;
+    text-align: center;
+}
+
+.navBar{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    position: sticky;
+    background-color: #1f1f1f;
+}
+
+.navBar ul, a{
+    text-decoration: none;
+    padding-top: 5px;
+    list-style-type: none;
+    color: orange;
+}
+
+.navBar a:hover{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.intro{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    color: orange;
+    text-align: center;
+    margin: 0;
+}
+
+.title h1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.intro a:hover{
+    color: #f3cbcb;
+    transition: .3s all ease;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(30px);
+    transition: .4s cubic-bezier(0,.86,.99,.21);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: orange; 
+}
+
+.card{
+    background-color: #1f1f1f;
+}
+.container h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 25px 0 0 25px;
+    padding: 25px;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    background-color: #1f1f1f;
+    border: 1px solid orange;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.moi{
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logohtml{
+    width: 150px;
+    padding: 15px;
+}
+
+.logocss{
+    width: 110px;
+    padding: 15px;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    text-align: center;
+}
+
+.contact{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 10%;
+    padding: 15px;
+}
+
+.contact p{
+    color: orange;
+}
+.contact a{
+    text-decoration: none;
+    color: orange;
+}
+.contact div{
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid orange;
+}

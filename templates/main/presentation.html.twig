@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Presentation{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div>
+        <h1>Presentation</h1>
+    </div>
+    
+    <div class="container3">
+        <div>
+        <h2>Jérôme Amstatt</h2>
+        <img class="moi" src="{{ asset('images/moi.jpg') }}" alt="Jérôme Amstatt" class="img-fluid">
+        <p class="reveal">
+            <p>Je m'appelle Jérôme Amstatt, j'ai 28 ans et je suis Dévellopeur Web à Dijon.</p><br>
+            Vous trouverez ici mes differents projets ( projet de formation, prestation professionnelle).<br>
+            Le métier de dévellopeur web est un métier qui me passionne depuis mon plus jeune âge.<br>
+            Vous êtes sur mon site aujourd'hui c'est que vous avez un projet à mettre en oeuvre ?<br>
+            Vous voulez donner vie à votre projet, ou votre entreprise ?<br>
+            Ou bien simplement redonner un coup de jeune à votre site web déjà existant<br>
+            Et bien vous êtes au bon endroit !
+        </p>
+        <p class="reveal">
+            Je serai en mesure de vous proposer le meilleur des technologies pour vous accompagner dans votre projet. <br> Tel que : <br>
+        </p>
+        <div class="logo reveal">
+            <p>
+                <img class="logohtml" src="{{ asset('images/html.svg.png') }}"></img>
+                <img class="logocss" src="{{ asset('images/css.png') }}"></img> 
+                <img class="logocss" src="{{ asset('images/js.png') }}"></img>
+                <img class="logohtml" src="{{ asset('images/react.png') }}"></img> 
+                <img class="logohtml" src="{{ asset('images/php.png') }}"></img>
+                <img class="logohtml" src="{{ asset('images/Symfony.svg.png') }}"></img> 
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,239 @@
+/* contien le background et la police d'écriture général */
+
+body{
+
+    background-image: url('../images/netflix/fond.jpg');
+    background-color: #141414ec;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    z-index: 0;
+}
+
+/* la classe img contient le logo Netflix  avec les éléments de style du texte et le bouton Mois Gratuit et son animation. */
+
+.logo{
+    width: 400px;
+}
+
+
+.img{
+    width: 100vw;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #14141483;
+}
+
+button{
+    width: 400px;
+    height: 50px;
+    background-color: #e50914;
+    border: none;
+    background-position: top center;
+    box-shadow: 0 0 0 0 #b62128;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 15px rgba(229, 9, 20, 0.01);
+        border-radius: 2px;
+    }
+}
+
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+  
+.button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover{
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    background-position: top center;
+    box-shadow: 0 0 0 0 #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e50914;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: pulse 1.3s infinite;
+}
+
+/* La classe Target contient la classe Rotate, l'élément crossplateforme animé. */
+
+.target{
+    width: 100%;
+    height: 200px;
+    background:  #141414;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    top: 50%;
+}
+
+
+.pc{
+    text-align: center;
+}
+
+/* La classe Target2 contient la classe Demo1 qui contient les 3 images crossplateforme. */
+
+.target2{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.demo1{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: small;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/* La classe Target3 contient le Footer */
+
+.target3{
+    background-color: #141414;
+    color: rgb(100, 100, 100);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+.target3 li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.target2 span{
+    position: absolute;
+    top: 710px;
+    left: 110px;
+    font-size: large;
+}
+
+/* La classe Id contient le style des boutons du header */
+
+.id{
+    /* position: absolute; */
+    text-align: right;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5074404761904762) 0%, rgba(0,0,0,1) 100%);
+    top: 0px;
+    padding: 10px;
+    /* left: 900px;
+    right: 10px; */
+    position: sticky;
+    z-index: 10;
+
+}
+
+.id button{
+    width: 120px;
+    height: 49px;
+    background-color: #e50914;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    margin-right: 25px;
+}
+
+.id button:hover{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    color: #e50914;
+    cursor: pointer;
+}
+
+.langue{
+    width: 120px;
+    height: 50px;
+    background-color: #141414e0;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 25px;
+    
+}
+
+
+option{
+    text-transform: capitalize;
+}
+
+/* Elements de style pour le footer et le lien téléphonique*/
+
+.target3 p{
+    position: absolute;
+    top: 1090px;
+    left: 90px;
+    font-size: large;
+}
+
+.target3 a{
+    color: gray;
+    text-decoration: none
+}
+
+.target3 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

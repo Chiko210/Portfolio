@@ -1,0 +1,68 @@
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('/CSS/stylezombicide.css') }}"/>
+{% endblock %}
+
+
+
+{% block body %}
+<header id="header">
+    <div class="logo">
+        <img src="{{ asset('images/zombicide/logo-zombicide2.png') }}" alt="logo-zombicide">
+    </div>
+    <div class="choice">
+        <nav>
+            <ul>
+                <li class="Jane"> <a href="#">jane</a></li>
+                <li class="Joe"><a href="">joe</a></li>
+                <li class="Louise"><a href="">louise</a></li>
+                <li class="Travis"><a href="">travis</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="retour">
+        <a href="{{ path('portfolio') }}">Retour</a>
+    </div>
+</header>
+<main>
+    <div class="main-content">
+        <div class="container">
+            <article class="hero">
+                <h2>Jane</h2>
+                <img id="imgJane" class="img" src={{ asset('images/zombicide/Jane.jpg')}} alt="Jane">
+                <div class="text">
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, soluta.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tempora possimus iusto minus laboriosam odio quos praesentium dolorem voluptatum et vel at provident officiis aspernatur.</p>
+                </div>
+            </article>
+            <article class="hero">
+                <h2>Joe</h2>
+                <img class="img" src={{ asset('images/zombicide/Joe.jpg')}} alt="Joe">
+                <div class="text">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, soluta.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tempora possimus iusto minus laboriosam odio quos praesentium dolorem voluptatum et vel at provident officiis aspernatur.</p>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="hero">
+                <h2>Louise</h2>
+                <img class="img" src={{ asset('images/zombicide/Louise.jpg')}} alt="Louise">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, soluta.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tempora possimus iusto minus laboriosam odio quos praesentium dolorem voluptatum et vel at provident officiis aspernatur.</p>
+            </article>
+            <article class="hero">
+                <h2>Travis</h2>
+                <img class="img" src={{ asset('images/zombicide/Travis.jpg')}} alt="Travis">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, soluta.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tempora possimus iusto minus laboriosam odio quos praesentium dolorem voluptatum et vel at provident officiis aspernatur.</p>
+            </article>
+        </div>
+    </div>
+</main>
+{% block javascript %}
+<script src={{asset('JS/scriptzombicide.js')}}></script>    
+{% endblock %}
+    
+{% endblock %}
