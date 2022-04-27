@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.background{
+    background-image: url('/images/blog/banner.jpg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    background: whitesmoke;
+}
+
+.logo div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: sticky;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: black;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+.custom-navbar{
+    background-color: 
+#a81829;
+    z-index: 1;
+    font-family: 'Roboto';
+}
+
+.custom-navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Par défaut, les boutons seront affichés en colonnes, puis la media query mettre en direction row sur les grands écrans (principe du mobile first !) */
+    flex-direction: column;
+    list-style: none;
+}
+
+.custom-navbar ul li a{
+    color: 
+white;
+    padding: 25px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: .3s all ease;
+    display: block;
+}
+
+.custom-navbar ul li a:hover{
+    color: 
+#a81829;
+    background-color: 
+white;
+}
+
+/* Media query qui s'activera sur les écrans faisant au moins 700 pixels de large */
+@media screen and (min-width: 700px) {
+
+    /* Sur les grands écrans, les liens seront en ligne et non plus en colonne. En cas de manque de place, les liens passeront en dessous */
+    .custom-navbar ul{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+.container{
+    background: white;
+    position: sticky;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box{
+    padding: 30px 5%;
+    font-size: 0.5rem;
+    text-align: center;
+    
+}
+
+.container h1{
+    color: #a81829;
+}
+
+.box img{
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px 0px 0px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titre2{
+    color: #a81829;
+    display: block;
+    position: relative;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.main-content article{
+    margin: auto 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box h1{
+    color: #a81829;
+}
+
+.box{
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+
+}
+
+
+.main-content section{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.main-content section a{
+    color: #a81829;
+}
+
+@media screen and (max-width: 750px){
+    .main-content article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .main-content .box{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+.message a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.message p{
+    background-color: #a81829;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.form label{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.email{
+    width: 100%;
+
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 25px
+}
+
+
+
+.message label{
+    margin: 10px;
+    padding: 5px 5%;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+@media screen and (max-width: 750px){
+    .email input{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .message{
+        margin: 25px 20%;
+    }
+
+
+    .form label{
+        margin: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        
+    }
+}
+
+.footer {
+    background-color: #363c42;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.mention{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mention p{
+    padding: 15px;
+}
+
+.mention a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.bouton img{
+    width: 100px;
+    height: 100px;
+    background-color: #a81829;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* .bouton{
+    
+    width: 200px;
+    height: 200px;
+    border: solid;
+    background-color: #a81829;
+    border-radius: 25px;
+} */
+

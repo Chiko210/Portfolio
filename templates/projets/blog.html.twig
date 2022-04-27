@@ -1,0 +1,80 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('./CSS/index.css') }}">
+{% endblock %}
+
+
+{% block body %}
+    <header id="haut">        
+        <div class="logo">
+            <div>
+            <h1>Holliday's Blog</h1>
+            </div>
+        </div>
+            <nav class="custom-navbar">
+                <ul>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
+                    <li><a href="#">Lien 4</a></li>
+                    <li><a href="#">Lien 5</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="box">
+                <h1><img class="box" src="{{ asset('./images/blog/calendar-check-regular.svg')}}"></img> Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint eum rem ullam eligendi vitae aliquam, alias sapiente ad asperiores natus nisi quam repudiandae, aspernatur illum totam reiciendis eius! Temporibus molestiae ipsum hic quidem enim sit blanditiis, quo quasi, maxime quas optio impedit unde rerum dolorum, omnis quos corrupti. Porro repudiandae sint iure? Reprehenderit culpa assumenda magni, ad beatae voluptates eius sit ullam repellendus alias rem tempora nesciunt necessitatibus unde molestiae aspernatur itaque incidunt suscipit laborum adipisci! Dignissimos odit quos qui excepturi sit optio temporibus? Dolorem itaque, soluta nostrum doloremque ipsa aperiam eligendi ullam, expedita id nesciunt pariatur omnis nam.</p>
+                </div>
+            </div>
+    </header>
+    <div class="background"></div>
+    <main class="main-content">
+        <div class="box">
+            <h1 ><img src="{{ asset('./images/blog/calendar-check-regular.svg')}}"></img> Lorem, ipsum dolor.</h1>
+        </div>      
+        <article>
+            <section>
+                <h2 class="titre2">Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, libero ducimus beatae fugit maiores at labore ea minus mollitia officia dolor quod vitae, dolorem eligendi molestias optio a consequuntur minima!</p>
+                <a href="#">Lire la suite</a>
+            </section>
+            <section>
+                <h2 class="titre2">Lorem ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, libero ducimus beatae fugit maiores at labore ea minus mollitia officia dolor quod vitae, dolorem eligendi molestias optio a consequuntur minima!</p>
+                <a href="#">Lire la suite</a>
+            </section>
+            <section>
+                <h2 class="titre2">Lorem ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, libero ducimus beatae fugit maiores at labore ea minus mollitia officia dolor quod vitae, dolorem eligendi molestias optio a consequuntur minima!</p>
+                <a href="#">Lire la suite</a>
+            </section>
+        </article>
+        <div class="box">
+            <h1><img src="{{ asset('./images/blog/calendar-check-regular.svg')}}"></img>Contactez nous</h1>
+        </div>
+        <div class="form">
+            <form action="#">
+                    <label for="Email">E-mail :</label>
+                    <input class="email" type="mailto" name="Email">
+                <div class="message">
+                    <label for="Message">Message :</label>
+                    <textarea name="Message" cols="30" rows="10">
+                    </textarea>
+                    <p><a href="#">Envoyer</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <a href="#haut"><div class="bouton"><img src="{{asset('./images/blog/fleche.png')}}" alt=""></div></a>
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/"><img class="facebook" src="{{ asset('./images/blog/facebook.png') }}" alt=""></a>
+            <a href="https://www.twitter.com/"><img class="twitter" src="{{ asset('./images/blog/logotwitter.png')}}" alt=""></a>
+            <div class="mention">
+                <p><a href="#">Mention Légal</a></p>
+                <p><a href="#">Mention Légal</a></p>
+                <p><a href="#">Mention Légal</a></p>
+            </div>
+    </footer>
+</body>
+</html>
+{% endblock %}
