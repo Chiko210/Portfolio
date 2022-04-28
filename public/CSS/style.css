@@ -237,6 +237,12 @@ img{
     padding: 15px;
 }
 
+.logosymfony{
+    width: 150px;
+    padding: 15px;
+    background-color: aliceblue;
+}
+
 .portfolio{
     display: flex;
     justify-content: space-around;
