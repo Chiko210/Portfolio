@@ -159,12 +159,12 @@ img{
 
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 
 .reveal-visible {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(50px);
     transition: .4s cubic-bezier(0,.86,.99,.21);
 }
 
