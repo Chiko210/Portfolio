@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body{
+    margin: 0;
+}
+
 .background{
     background-image: url('/images/blog/banner.jpg');
     height: 300px;
@@ -51,6 +55,8 @@
     display: flex;
     /* Par défaut, les boutons seront affichés en colonnes, puis la media query mettre en direction row sur les grands écrans (principe du mobile first !) */
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
 }
 
